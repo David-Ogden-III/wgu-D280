@@ -1,0 +1,15 @@
+#mapImg {
+  max-width: 70%;
+  height: auto;
+}
+.dataContainer {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
