@@ -7,11 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class MyApiService {
 
-  private apiUrl = 'http://api.worldbank.org/v2/country/ru?format=json';
 
   constructor(private http: HttpClient) { }
 
   getData(countryId: string | undefined): Observable<any> {
-    return this.http.get('http://api.worldbank.org/v2/country/' + countryId + '?format=json', {responseType: 'json'})
+    var apiUrl = `http://api.worldbank.org/v2/country/${countryId}?format=json`;
+    return this.http.get(apiUrl, {responseType: 'json'})
   }
 }

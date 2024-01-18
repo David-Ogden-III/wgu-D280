@@ -3,13 +3,21 @@
   height: auto;
 }
 .dataContainer {
-  width: 30%;
+  width: 15%;
   height: 100%;
-  text-align: center;
+  text-align: left;
 }
 .container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
 }
